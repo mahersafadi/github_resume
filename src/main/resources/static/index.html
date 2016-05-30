@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/file.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Resume Builder</a>
+			</div>
+			<ul class="nav navbar-nav">
+
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<label>Welcome to resume builder, this resume is build using
+			github username <br /> To use it, please add github username the
+			press 'Generate Resume' button
+		</label>
+		<div class='row'>
+			<div class="col-md-10">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon3">Github
+						username</span> <input type="text" id='searchUN'
+						placeholder="Enter github user name here" class="form-control"
+						id="basic-url" aria-describedby="basic-addon3">
+				</div>
+			</div>
+			<div class="col-md-2">
+				<button type="button" class="btn btn-primary" onclick="generate()">Generate Resume</button>
+			</div>
+		</div>
+		<div class='row'>
+			<div class="col-md-4"></div>
+			<div class="col-md-8">
+				<label id='msg' style='display: none;'><font color="red">Fill
+						github user name is mandatory</font></label>
+			</div>
+		</div>
+	</div>
+	<label style='display: none;' id='srvrmsg'></label>
+	<div class="container" id='resume' style='display: none;'>
+
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Resume Result</a>
+				</div>
+				<ul class="nav navbar-nav">
+
+				</ul>
+			</div>
+		</nav>
+		<nav class="navbar navbar-default">
+			<div class="container" ><label>General Info:</<label></div>
+			<div class="container">
+				<div class='row'>
+					<div class='col-md-2'>
+						Forks: <span id='forks'></span>
+					</div>
+					<div class='col-md-1'></div>
+					<div class='col-md-2'>
+						Followers: <span id='followers'></span>
+					</div>
+					<div class='col-md-1'></div>
+					<div class='col-md-2' id='githubprofile'>
+						
+					</div>
+					<div class='col-md-1'></div>
+					<div class='col-md-2'>
+						Email: <span id='email'></span>
+					</div>
+					<div class='col-md-1'></div>
+				</div>
+			</div>
+			<div class="container" ><label>Languages:</<label></div>
+			<div class="container" id='languages'></div>
+			<div class="container" ><label>Repositories:</<label></div>
+			<div class="container" id='repositories'></div>
+		</nav>
+	</div>
+</body>
+</html>
